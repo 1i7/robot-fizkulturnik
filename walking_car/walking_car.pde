@@ -71,7 +71,7 @@ void demo_servos() {
   delay(1000);
 }
 
-void loop() {
+void demo_wheels() {
   motor_left_speed(255);
   motor_left_forward();
   delay(4000);
@@ -91,9 +91,20 @@ void loop() {
   //motor_left_speed(0);
   //delay(4000);
   //motor_left_speed(100);
+}
+
+void loop() {
+  // Play with wheels
+  //demo_wheels();
 
   // Play with servos
-  //demo_servos();
+  demo_servos();
+  
+  // initial position
+  //sit();
+  //delay(4000);
+  //stand();
+  //delay(4000);
 }
 
 void f_sit() {
